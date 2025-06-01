@@ -1,0 +1,72 @@
+<script>
+    /*linea que permite escribir*/
+    document.write('Hola, mi nombre es Eduardo Garcia'); //escribo texto 
+    document.write('<br>'); //escribo una etiqueta html de salto de línea en el texto (retorno de carro).
+
+    document.write('Este es el ejercicio de Javascript de la Unidad 2 de la materia Desarrollo de Videojuegos');
+    document.write('<br>');
+    document.write('<br>');
+    document.write('Hagamos operaciones');
+    document.write('<br>');
+    document.write('<br>');
+
+    /*creo variables*/
+    var radioCirculo;
+    var baseRectangulo;
+    var alturaRectangulo;
+    var ladoPentagono;
+    var apotemaPentagono;
+
+    /*pido datos en un dialogo del explorador*/
+    radioCirculo = prompt('Dame el radio del círculo:', '');
+    baseRectangulo = prompt('Dame la base del rectángulo:', '');
+    alturaRectangulo = prompt('Dame la altura del rectángulo:', '');
+    ladoPentagono = prompt('Dame el lado del pentágono regular:', '');
+    apotemaPentagono = prompt('Dame el apotema del pentágono regular:', '');
+
+
+    /*convierto valores a valores numericos para poder hacer operaciones*/
+    radioCirculo = parseInt(radioCirculo);
+    baseRectangulo = parseInt(baseRectangulo);
+    alturaRectangulo = parseInt(alturaRectangulo);
+    ladoPentagono = parseInt(ladoPentagono);
+    apotemaPentagono = parseInt(apotemaPentagono);
+
+    /*hago operaciones*/
+    // Círculo
+    var areaCirculo = 3.1416 * (radioCirculo * radioCirculo);
+    var perimetroCirculo = 2 * 3.1416 * radioCirculo;
+
+    // Rectángulo
+    var areaRectangulo = baseRectangulo * alturaRectangulo;
+    var perimetroRectangulo = 2 * (baseRectangulo + alturaRectangulo);
+
+    // Pentágono regular
+    var perimetroPentagono = 5 * ladoPentagono;
+    var areaPentagono = (perimetroPentagono * apotemaPentagono) / 2;
+
+
+    /*escribo resultados*/
+    document.write('El area del círculo es: ');
+    document.write(areaCirculo);
+    document.write('<br>');
+    document.write('El perímetro del círculo es: ');
+    document.write(perimetroCirculo);
+    document.write('<br>');
+    document.write('<br>');
+
+    document.write('El area del rectángulo es: ');
+    document.write(areaRectangulo);
+    document.write('<br>');
+    document.write('El perímetro del rectángulo es: ');
+    document.write(perimetroRectangulo);
+    document.write('<br>');
+    document.write('<br>');
+    
+    document.write('El area del pentágono regular es: ');
+    document.write(areaPentagono);
+    document.write('<br>');
+    document.write('El perímetro del pentágono regular es: ');
+    document.write(perimetroPentagono);
+
+</script>
